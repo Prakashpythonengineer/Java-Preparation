@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int x,y,z;
+        
+        x = sc.nextInt();
+        y = sc.nextInt();
+        z = sc.nextInt();
+        
+        int c = (x>y && x>z) ? x : (y>x && y>z)? y : z;
+        // : acts as else if or else
+        System.out.println(c);
+    }
+}
