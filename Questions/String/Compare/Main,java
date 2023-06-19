@@ -1,0 +1,31 @@
+public class Main{
+    public static void main(String[] args){
+        String S1 = "Prakash";
+        String S2 = "praakash";
+
+        //Never use "==" because it check only the reference and not the content of the string
+
+        //So, either use equals() or compareTo() method 
+
+        //equals() method
+
+        if(S1.equals(S2)){
+            System.out.println("Both are equal");
+        }
+
+        else{
+            System.out.println("Both are not equal");
+        }
+
+        //compareTo() method
+        // this method returns 0 if both strings are equal else returns the difference in the number of the first different character
+
+        if(S1.compareTo(S2) == 0){
+            System.out.println("Both are equal");
+        }
+
+        else{
+            System.out.println("Both are not equal");
+        }
+    }
+}
